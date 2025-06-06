@@ -28,7 +28,7 @@ A minimalist web app that displays the current time and date in real-time. Built
 1. Download or Clone this Repository:
 
 ```bash
-git clone https://github.com/yourusername/live-clock.git
+git clone https://github.com/maishamagicast/live-clock
 cd live-clock
 ```
 Open in Your Browser:
