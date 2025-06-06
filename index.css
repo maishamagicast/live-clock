@@ -1,0 +1,92 @@
+
+/* Import clean monospaced font */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Share Tech Mono', monospace;
+  background-image: url('https://images.wallpapersden.com/image/download/cool-landscape-night-minimal-art_bGxna2aUmZqaraWkpJRobWllrWdma2U.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #dddddd; /* soft white-gray */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  
+}
+
+main:hover{
+    cursor: none;
+}
+
+/* Optional soft overlay for contrast */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* very light dark layer */
+  z-index: -1;
+}
+
+/* Main Container with subtle background */
+main {
+  background: rgba(255, 255, 255, 0.05); /* almost transparent */
+  border-radius: 16px;
+  padding: 2rem 3rem;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+}
+
+/* Heading – light and small */
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 400;
+  color: #cccccc;
+}
+
+/* Clock Display – minimalist look */
+#clock-display {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  font-weight: 300;
+  color: #e0e0e0;
+}
+
+/* Date Display – smaller and soft */
+#date-display {
+  font-size: 1.2rem;
+  color: #bbbbbb;
+}
+
+
+@media (max-width: 600px) {
+  main {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  #clock-display {
+    font-size: 2.5rem;
+  }
+
+  #date-display {
+    font-size: 1rem;
+  }
+}
+
